@@ -57,9 +57,18 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     transition: background-color 0.5s ease;
+    /* Prevent content from being hidden behind footer */
+
+.container {
+    padding-bottom: 3.5rem; /* Height of footer + extra for spacing */
+}
+
+.page {
+    padding-bottom: 2.5rem;
 }
 
 /* Professional typography hierarchy */
+h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Object Sans', sans-serif;
     font-weight: 400;
@@ -484,4 +493,4 @@ h1, h2, h3, h4, h5, h6 {
             padding: 1rem;
             font-size: 1rem;
         }
-    }
+    /* End of file - removed stray closing brace */
