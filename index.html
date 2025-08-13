@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech.Revise</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Object+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+        <div id="home-logo" class="logo"><span class="logo-white">SaltyHash |</span> Tech.Revise</div>
+        <nav class="navigation">
+            <button id="dashboard-btn" class="nav-btn active">Dashboard</button>
+            <button id="quiz-btn" class="nav-btn">Start Quiz</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section id="dashboard" class="page active">
+            <div class="dashboard-header">
+                <h2>Ready to Level Up Your Skills?</h2>
+                <p>Choose your learning path and start mastering technology concepts.</p>
+            </div>
+            <div class="quiz-selection">
+                <div class="quiz-card" data-quiz-id="network-fundamentals">
+                    <i class="fas fa-network-wired quiz-icon"></i>
+                    <h3>Network Fundamentals</h3>
+                    <p>50 Questions</p>
+                    <button class="start-quiz-btn">Start</button>
+                </div>
+                <div class="quiz-card" data-quiz-id="web-app-development">
+                    <i class="fas fa-code quiz-icon"></i>
+                    <h3>Web/App Development</h3>
+                    <p>50 Questions</p>
+                    <button class="start-quiz-btn">Start</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-section" class="page">
+            <div class="quiz-header">
+                <h2 id="quiz-title">Network Fundamentals</h2>
+                <div class="progress-bar-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+            </div>
+            
+            <div class="quiz-content">
+                <div id="question-container" class="question-container">
+                    <p id="question-text">Question will appear here...</p>
+                </div>
+                
+                <div id="options-container" class="options-container">
+                    </div>
+
+                <div class="feedback-section">
+                    <div id="hint-section" class="info-section hint-section">
+                        <h4>Hint:</h4>
+                        <p id="hint-text"></p>
+                    </div>
+                    <div id="explanation-section" class="info-section explanation-section">
+                        <h4>Explanation:</h4>
+                        <p id="explanation-text"></p>
+                    </div>
+                </div>
+
+                <div class="quiz-controls">
+                    <button id="next-question-btn" class="control-btn" disabled>Next Question</button>
+                    <button id="show-hint-btn" class="control-btn secondary">Show Hint</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="results-section" class="page">
+            <div class="results-summary">
+                <h2>Quiz Complete!</h2>
+                <p>Your Score: <span id="score-display">0</span> / <span id="total-questions">50</span></p>
+                <div class="results-details">
+                    <p>Correct Answers: <span id="correct-answers">0</span></p>
+                    <p>Incorrect Answers: <span id="incorrect-answers">0</span></p>
+                </div>
+                <button id="restart-btn" class="control-btn">Try Again</button>
+            </div>
+        </section>
+
+    </main>
+    <script src="network-fundamentals-quiz.js"></script>
+    <script src="web-app-dev-quiz.js"></script>
+    <script src="script-new.js"></script>
+</body>
+</html>
+
+    <!-- Accessibility and mobile improvements -->
+    <!-- Add aria-labels and roles for navigation and main sections -->
