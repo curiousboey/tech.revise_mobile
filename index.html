@@ -91,6 +91,22 @@
     <script src="web-app-dev-quiz.js"></script>
     <script src="script-new.js"></script>
 </body>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <span>© 2025 Tech.Revise | SaltyHash</span>
+            </div>
+        </footer>
+        <script>
+            // Footer resize logic for Wix embedding
+            function adjustFooter() {
+                var footer = document.querySelector('.footer');
+                if (!footer) return;
+                footer.style.width = window.innerWidth + 'px';
+            }
+            window.addEventListener('resize', adjustFooter);
+            window.addEventListener('DOMContentLoaded', adjustFooter);
+        </script>
 </html>
 
     <!-- Accessibility and mobile improvements -->

@@ -10,6 +10,33 @@
     --danger-color: #dc3545;
 }
 
+/* Desktop footer styles */
+.footer {
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: var(--secondary-color);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    z-index: 100;
+    border-top: 1px solid var(--border-color);
+    backdrop-filter: blur(8px);
+}
+.footer-content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 0.7rem 0;
+        font-size: 0.95rem;
+    }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
