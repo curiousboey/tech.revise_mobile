@@ -43,13 +43,10 @@
     padding: 0;
 }
 
-body {
+html, body {
     font-family: 'Object Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-    /* Main background with image, gradient overlay, and pattern - Made brighter by reducing overlay opacity */
     background-color: #1e2025;
-    background-image: 
-        linear-gradient(135deg, rgba(42, 44, 48, 0.3) 0%, rgba(30, 32, 37, 0.4) 100%),
-        url('./background.jpg');
+    background-image: linear-gradient(135deg, rgba(42, 44, 48, 0.3) 0%, rgba(30, 32, 37, 0.4) 100%), url('./background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -57,6 +54,15 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     transition: background-color 0.5s ease;
+    overflow-x: hidden;
+    overflow-y: visible;
+    height: auto !important;
+}
+
+.container, .page, main {
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
 }
 
 /* Professional typography hierarchy */
