@@ -9,13 +9,14 @@
 
 **Part of [SaltyHash.tech](https://saltyhash.tech)** - A comprehensive educational platform
 
-An advanced, interactive quiz application featuring CompTIA Network+ fundamentals and Web/App Development questions. This is the foundational quiz module of the larger SaltyHash.tech educational ecosystem, with many more quiz sections planned for future releases.
+An advanced, interactive quiz application featuring CompTIA Network+ fundamentals, Web/App Development, and Nmap Network Security questions. This is the foundational quiz module of the larger SaltyHash.tech educational ecosystem, with many more quiz sections planned for future releases.
 
 ## 🚀 Features
 
 - **📚 Current Quiz Categories (More Coming Soon!)**
   - Network Fundamentals (50 CompTIA Network+ questions)
   - Web/App Development (50 comprehensive questions)
+  - Nmap & Network Security (50 hands-on Nmap questions)
   - *Future: Cloud Computing, Cybersecurity, DevOps, AI/ML, and more!*
 
 - **🎯 Interactive Learning Experience**
@@ -117,6 +118,19 @@ tech.revise/
   - Web Security Best Practices
   - Modern Development Tools and Workflows
 
+#### Nmap & Network Security
+- **Topics Covered:**
+  - Nmap Scan Types and Techniques
+  - Network Discovery and Host Detection
+  - Port Scanning Methodologies
+  - Service Version Detection
+  - Operating System Fingerprinting
+  - Timing and Performance Optimization
+  - Output Formats and Analysis
+  - Network Security Assessment
+  - TCP/IP Stack Characteristics
+  - Firewall and IDS Evasion Techniques
+
 ### 🚀 Future Quiz Categories (Coming to SaltyHash.tech)
 
 #### Phase 1 - Core Technology Stacks
@@ -175,7 +189,20 @@ tech.revise/
    </div>
    ```
 
-3. **Update the JavaScript** to handle the new category in `script-new.js`.
+3. **Update the JavaScript** to handle the new category in `script-new.js`:
+   ```javascript
+   // Add to quizData object
+   const quizData = {
+       'network-fundamentals': networkFundamentalsQuestions,
+       'web-app-development': webAppDevQuestions,
+       'nmap-quiz': nmapQuestions,
+       'new-category': newCategoryQuestions
+   };
+   
+   // Add to quiz title logic
+   } else if (currentQuizType === 'new-category') {
+       quizTitle.textContent = 'New Category Name';
+   ```
 
 ### Styling Customization
 
@@ -247,6 +274,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **SaltyHash.tech Community** for continuous feedback and support
 - **CompTIA** for Network+ certification standards and guidelines
 - **Web Development Community** for best practices and modern standards
+- **Nmap Development Team** for creating the most powerful network discovery tool
+- **Network Security Professionals** for sharing knowledge and best practices
 - **Open Source Contributors** who help improve the platform
 - **Beta Testers** who provide valuable feedback for upcoming features
 - **Educational Technology Pioneers** for inspiration and innovation

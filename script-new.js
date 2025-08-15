@@ -1,10 +1,12 @@
 // Network fundamentals quiz questions are loaded from network-fundamentals-quiz.js
 // Web development quiz questions are loaded from web-app-dev-quiz.js
+// Nmap quiz questions are loaded from nmap-quiz.js
 
 // Quiz data storage - questions are loaded from external files
 const quizData = {
     'network-fundamentals': networkFundamentalsQuestions,
-    'web-app-development': webAppDevQuestions
+    'web-app-development': webAppDevQuestions,
+    'nmap-quiz': nmapQuestions
 };
 
 let currentQuizType = 'network-fundamentals';
@@ -82,6 +84,8 @@ function startQuiz(quizType = 'network-fundamentals') {
         quizTitle.textContent = 'Network Fundamentals';
     } else if (currentQuizType === 'web-app-development') {
         quizTitle.textContent = 'Web/App Development';
+    } else if (currentQuizType === 'nmap-quiz') {
+        quizTitle.textContent = 'Nmap & Network Security';
     }
     
     // Randomize the order of the questions

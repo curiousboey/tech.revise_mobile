@@ -37,6 +37,12 @@
                     <p>50 Questions</p>
                     <button class="start-quiz-btn">Start</button>
                 </div>
+                <div class="quiz-card" data-quiz-id="nmap-quiz">
+                    <i class="fas fa-shield-alt quiz-icon"></i>
+                    <h3>Nmap & Network Security</h3>
+                    <p>50 Questions</p>
+                    <button class="start-quiz-btn">Start</button>
+                </div>
             </div>
         </section>
 
@@ -87,9 +93,23 @@
         </section>
 
     </main>
-    <script src="network-fundamentals-quiz.js"></script>
-    <script src="web-app-dev-quiz.js"></script>
-    <script src="script-new.js"></script>
+        <script src="network-fundamentals-quiz.js"></script>
+        <script src="web-app-dev-quiz.js"></script>
+        <script src="nmap-quiz.js"></script>
+        <script src="script-new.js"></script>
+        <script>
+            // Dynamically send height to parent (Wix) for iframe resizing
+            function sendHeightToParent() {
+                if (window.parent !== window) {
+                    var height = document.documentElement.scrollHeight;
+                    window.parent.postMessage({ type: 'embed-height', height: height }, '*');
+                }
+            }
+            window.addEventListener('DOMContentLoaded', sendHeightToParent);
+            window.addEventListener('resize', sendHeightToParent);
+            // Also observe DOM changes (for dynamic content)
+            new MutationObserver(sendHeightToParent).observe(document.body, { childList: true, subtree: true, attributes: true, characterData: true });
+        </script>
 </body>
 
         <script>

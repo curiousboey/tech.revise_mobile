@@ -5,6 +5,27 @@ All notable changes to Tech.Revise (part of SaltyHash.tech) will be documented i
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2025-08-16 - Nmap & Network Security Addition
+
+### Added
+- 🛡️ **Nmap & Network Security quiz** with 50 comprehensive hands-on questions
+- 🔍 **Advanced network scanning techniques** and practical Nmap usage scenarios
+- 🎯 **Security assessment methodologies** and network discovery best practices
+- 📊 **Enhanced quiz selection interface** with three distinct learning paths
+
+### Enhanced Features
+- **New Quiz Category:**
+  - Nmap & Network Security (Scan types, Port scanning, OS detection, Performance optimization, etc.)
+- **Updated UI/UX:**
+  - Added shield icon for security-focused content
+  - Improved mobile responsiveness for three-card layout
+  - Enhanced accessibility for embedded Wix integration
+
+### Technical Improvements
+- **Mobile Optimization:** Better scroll handling for embedded environments
+- **Dynamic Sizing:** Improved iframe integration with parent sites
+- **Question Diversity:** Expanded from 2 to 3 comprehensive quiz categories
+
 ## [1.0.0] - 2025-08-13 - Initial SaltyHash.tech Integration
 
 ### Added
