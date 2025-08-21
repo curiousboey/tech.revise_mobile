@@ -1,12 +1,14 @@
 // Network fundamentals quiz questions are loaded from network-fundamentals-quiz.js
 // Web development quiz questions are loaded from web-app-dev-quiz.js
 // Nmap quiz questions are loaded from nmap-quiz.js
+// Operating Systems quiz questions are loaded from OS-quiz.js
 
 // Quiz data storage - questions are loaded from external files
 const quizData = {
     'network-fundamentals': networkFundamentalsQuestions,
     'web-app-development': webAppDevQuestions,
-    'nmap-quiz': nmapQuestions
+    'nmap-quiz': nmapQuestions,
+    'os-quiz': osQuizQuestions
 };
 
 let currentQuizType = 'network-fundamentals';
@@ -49,6 +51,21 @@ function shuffleArray(array) {
   }
 }
 
+// Function to update question counts dynamically
+function updateQuestionCounts() {
+    const questionCountElements = document.querySelectorAll('.question-count');
+    questionCountElements.forEach(element => {
+        const quizType = element.getAttribute('data-quiz');
+        if (quizData[quizType] && quizData[quizType].length) {
+            element.textContent = quizData[quizType].length;
+        } else {
+            // Fallback to 0 if quiz data is not available
+            element.textContent = '0';
+            console.warn(`Quiz data for ${quizType} is not available or empty`);
+        }
+    });
+}
+
 // Function to switch between pages
 function showPage(pageId) {
     const pages = document.querySelectorAll('.page');
@@ -86,6 +103,8 @@ function startQuiz(quizType = 'network-fundamentals') {
         quizTitle.textContent = 'Web/App Development';
     } else if (currentQuizType === 'nmap-quiz') {
         quizTitle.textContent = 'Nmap & Network Security';
+    } else if (currentQuizType === 'os-quiz') {
+        quizTitle.textContent = 'Operating Systems';
     }
     
     // Randomize the order of the questions
@@ -225,4 +244,5 @@ document.getElementById('home-logo').addEventListener('click', () => {
 // Initial load
 document.addEventListener('DOMContentLoaded', () => {
     showPage('dashboard');
+    updateQuestionCounts(); // Update question counts dynamically
 });

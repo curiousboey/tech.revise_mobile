@@ -5,6 +5,28 @@ All notable changes to Tech.Revise (part of SaltyHash.tech) will be documented i
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2025-08-21 - Operating Systems Quiz Addition
+
+### Added
+- 🖥️ **Operating Systems quiz** with 50 comprehensive questions covering OS fundamentals
+- 🎯 **Advanced OS concepts** including process management, memory management, and system architecture
+- 📱 **Enhanced responsive design** optimized for four quiz categories
+- 🔧 **Improved layout** with better card spacing and medium screen support
+
+### Enhanced Features
+- **New Quiz Category:**
+  - Operating Systems (OS Architecture, Process Management, Memory Management, Real-time Systems, etc.)
+- **Updated UI/UX:**
+  - Added desktop icon for OS-focused content
+  - Enhanced four-card layout with better spacing
+  - Added tablet/medium screen responsive breakpoint
+  - Improved mobile layout for four quiz options
+
+### Technical Improvements
+- **Responsive Design:** Better handling of four quiz cards across all screen sizes
+- **CSS Grid Enhancement:** Optimized layout for desktop, tablet, and mobile
+- **Question Categories:** Expanded from 3 to 4 comprehensive quiz categories
+
 ## [1.1.0] - 2025-08-16 - Nmap & Network Security Addition
 
 ### Added

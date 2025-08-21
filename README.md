@@ -9,7 +9,7 @@
 
 **Part of [SaltyHash.tech](https://saltyhash.tech)** - A comprehensive educational platform
 
-An advanced, interactive quiz application featuring CompTIA Network+ fundamentals, Web/App Development, and Nmap Network Security questions. This is the foundational quiz module of the larger SaltyHash.tech educational ecosystem, with many more quiz sections planned for future releases.
+An advanced, interactive quiz application featuring CompTIA Network+ fundamentals, Web/App Development, Nmap Network Security, and Operating Systems questions. This is the foundational quiz module of the larger SaltyHash.tech educational ecosystem, with many more quiz sections planned for future releases.
 
 ## 🚀 Features
 
@@ -17,6 +17,7 @@ An advanced, interactive quiz application featuring CompTIA Network+ fundamental
   - Network Fundamentals (50 CompTIA Network+ questions)
   - Web/App Development (50 comprehensive questions)
   - Nmap & Network Security (50 hands-on Nmap questions)
+  - Operating Systems (50 comprehensive OS concepts questions)
   - *Future: Cloud Computing, Cybersecurity, DevOps, AI/ML, and more!*
 
 - **🎯 Interactive Learning Experience**
@@ -131,6 +132,19 @@ tech.revise/
   - TCP/IP Stack Characteristics
   - Firewall and IDS Evasion Techniques
 
+#### Operating Systems
+- **Topics Covered:**
+  - OS Architecture and Components
+  - Process Management and Scheduling
+  - Memory Management and Virtual Memory
+  - File Systems and Storage Management
+  - Real-time vs Time-sharing Systems
+  - Multiprocessing (SMP vs AMP)
+  - Device Management and I/O Operations
+  - System Calls and Kernel Functions
+  - Operating System Security
+  - Distributed and Embedded Systems
+
 ### 🚀 Future Quiz Categories (Coming to SaltyHash.tech)
 
 #### Phase 1 - Core Technology Stacks
@@ -196,6 +210,7 @@ tech.revise/
        'network-fundamentals': networkFundamentalsQuestions,
        'web-app-development': webAppDevQuestions,
        'nmap-quiz': nmapQuestions,
+       'os-quiz': osQuizQuestions,
        'new-category': newCategoryQuestions
    };
    
